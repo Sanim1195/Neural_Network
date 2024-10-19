@@ -44,11 +44,11 @@ weights = [
     [0.5, -0.91, 0.26, -0.5],
     [-0.26, -0.27, 0.17, 0.87]
 ]
-bias = [2,3,0.5]
+biases = [2,3,0.5]
 # output of current layer
 layer_outputs = []
 # for each neuron 
-for neuron_weight,neuron_bias in zip(weights,bias):
+for neuron_weight,neuron_bias in zip(weights,biases):
     # Zeroed output of given neuron
     neuron_output = 0
     # for each input and weight to the neuron
@@ -57,11 +57,13 @@ for neuron_weight,neuron_bias in zip(weights,bias):
     for n_input, weight in zip(inputs, neuron_weight):
         # Multiply this input by assiciated weight
         # and add to the neurons output variable
-        neuron_output = n_input * weight
-        # now add bias to it
-        neuron_output += neuron_bias
-        # put neurons result to the layer's output list 
-        layer_outputs.append(neuron_output)
+        neuron_output += n_input * weight
+        print("Neuron Output :", neuron_output)
+    # now add bias to it
+    neuron_output += neuron_bias
+    # put neurons result to the layer's output list 
+    print("\n")
+    layer_outputs.append(neuron_output)
 
 print(layer_outputs)
 
