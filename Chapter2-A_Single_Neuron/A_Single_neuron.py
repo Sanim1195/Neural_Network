@@ -1,4 +1,5 @@
-#           For a single Neuron
+# 1)
+#           For a single Neuron  
 
 #  when you initialize parameters in neural networks, our network will have weights initialized randomly, and biases set as zero to start
 # The input will be either atual training data or the otputs of the previous layer

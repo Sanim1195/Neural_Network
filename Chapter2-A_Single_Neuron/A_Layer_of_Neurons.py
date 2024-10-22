@@ -1,3 +1,4 @@
+# 2
 # %%
 #  A layer of neurons
 # He basically did the same thing but with a layer of neurons
