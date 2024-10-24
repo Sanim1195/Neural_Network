@@ -48,3 +48,4 @@ layer_outputs = np.dot(weights2,inputs2) + biases2
 # a dot product of a matrix and a vector results in a list of dot products
 
 print("Dot Product of our matrix: ", layer_outputs)
+
