@@ -47,13 +47,3 @@ biases = [2.0, 3.0, 0.5]
 # Since the columns of inputs does not match with the rows of weights we have to perform a matrix transposition to match their  outer and inner shape dims.
 layer_output = np.dot(inputs,np.array(weights).T) + biases
 print("The layer output is: \n", layer_output, "\n")
-
-
-
-
-
-
-
-
-
-
