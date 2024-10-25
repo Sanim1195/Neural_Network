@@ -15,8 +15,7 @@ vector = np.array([[1,2,3]])
 a = [1,2,3]
 print("Using numpy to transform a list into a matrix: ", np.array([a]), "\n")    #output: [[1 2 3]] which signifies a shape of (1,3). A 2D matrix with 1 row and 3 columns.
 
-
-# Or we can turn it into a 1D array and expand dimensions using one of the NumPy abilities:
+# Or we can turn it into a 2D array and expand dimensions using one of the NumPy abilities:
 b = [1,2,3]
 b_dims_expanded = np.expand_dims((b),axis=0)
 print("Turining a list to a 1D array/matrix]: ", b_dims_expanded, "\n")   #output: [[1,2,3]]
