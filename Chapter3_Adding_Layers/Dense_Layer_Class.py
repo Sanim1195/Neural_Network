@@ -14,7 +14,7 @@ nnfs.init()
 class Layer_Dense:
     # Layer Initilaization
     def __init__(self, n_inputs, n_neurons) -> None:
-        # The weights here will be the number of inputs for the first dimension and the number of neurons for the 2nd dimension.
+        # The weights here will be the number of inputs for the first dimension and the number of neurons for the 2nd dimension.        
         self.weights = 0.01 * np.random.randn(n_inputs,n_neurons)
         # We’ll initialize the biases with the shape of (1, n_neurons), as a row vector, which will let us easily add it to the result of the dot product later, without additional operations like transposition.
         self.biases = np.zeros((1,n_neurons))
@@ -28,13 +28,15 @@ class Layer_Dense:
 
 # initializing dataset
 X,y = spiral_data(samples=100, classes=3)
+# The spiral_data function generates a dataset where the total number of samples is samples * classes. So, when you specify samples=100 and classes=3, it generates 100 samples for each class, resulting in a total of 300 samples.
+print("The shape of X is: ", np.shape(X), "\n")
 
 # creating a dense layer with 2 inputs and 3 output values(neurons)
 dense1 = Layer_Dense(2,3)
 
 # performing forward pass of our training data through this layer
 dense1.forward(X)
-print(dense1.output[:5])
+print(np.shape(dense1.output[:5]))
 
 
 
