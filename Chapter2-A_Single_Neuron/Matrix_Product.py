@@ -4,7 +4,7 @@ import numpy as np
 
 # IMP: To perform a matrix product, the size of the second dimension of the left (5,4) matrix must match the size of the first dimension of the right matrix (4,3).
 
-# A row vector is a matrix whose first dimension’s size (the number of rows) equals 1 and the second dimension’s size (the number of columns) equals n​ — the vector size. In other words, it’s a 1×n array or array of shape (1, n):
+# A row vector is a matrix whose first dimension’s size (the number of rows) equals 1 and the second dimension’s size (the number of columns) equals n — the vector size. In other words, it’s a 1×n array or array of shape (1, n):
 # a = [a1,a2,a3....aN]
 
 
