@@ -17,7 +17,7 @@ print(np.exp(-np.inf), np.exp(0))
 
 # Suppose we subtract the maximum value from a list of input values. We would then change the output values to always be in a range from some negative value up to 0, as the largest number subtracted by itself returns 0, and any smaller number subtracted by it will result in a negative number — exactly the range discussed above.
 
-# With Softmax, thanks to the normalization, we can subtract any value from all of the inputs, and it will not change the output:
+# With Softmax, thanks to the normalization, we can subtract any value from all of the inputs, and it will not change the output(after exponentiating)
 
 # Use the above property inside the Softmax activation class
 # Softmax activation

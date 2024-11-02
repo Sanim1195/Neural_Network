@@ -10,7 +10,7 @@
 # The softmax function for a given number zi,j [where zi,j is the Raw score for the ith indexed j class] =  the Exponential of zi,j (the current raw score) DIVIDED BY the ∑(summation) of the exponentiated raw scores for all classes in given sample.
 
 
-# Output from previous layer of neuron with 3 classes
+# Output froma single neuron from previous layers of neuron with 3 classes
 outputs = [4.8, 1.21, 2.385]
 
 # Mathematical consonant e
@@ -33,7 +33,7 @@ print(f"Exponentiated values: {exponentiated} ", "\n")
 # For our outputs, exponentiated at this stage,that’s what the equation of the Softmax function describes next — to take a given exponentiated value and divide it by the sum of all of the exponentiated values.
 
 # Normalizing the code:
-norm_base = sum(exponentiated) #summing the exponentiated values 
+norm_base = sum(exponentiated) #summing the exponentiated values
 print("The sum of all exponentiated base: " , norm_base, "\n")
 normalized_value = []
 
@@ -59,7 +59,7 @@ exp_values = np.exp(layer_outputs)
 print("Exponentiated values using np.exp(): \n" ,exp_values , "\n")
 
 # In a 2D array/matrix, axis 0 refers to the rows, and axis 1 refers to the columns
-# So in order to get the sum of each row in a 2d matrix and keep dims to keep the same dimension i.e a 2D matrix.  
+# So in order to get the sum of each row in a 2d matrix and keep dims to keep the same dimension i.e a 2D matrix. 
 
 sum_of_exp_values = np.sum(layer_outputs, axis=0, keepdims=True)
 print("The sum of exponentiated values along axis=0 (sum along the rows) are : \n",sum_of_exp_values, "\n")
