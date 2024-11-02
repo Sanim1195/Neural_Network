@@ -67,10 +67,11 @@ print("The sum of exponentiated values along axis=0 (sum along the rows) are : \
 # Without specifying the axis the sum function will sum up all values inside the array
 print("Using sum without specifying the axis results in : ", np.sum(sum_of_exp_values), "\n")
 
-# But this is not what we want: We want to sum all the columns(class). To which we juse the axis as 1
+# But this is not what we want: We want to sum all the columns(class). To which we juat use the axis= 1. Remember to keep the optput's dimension equal to the input dimension
 sum_of_exp_values2 = np.sum(layer_outputs, axis=1, keepdims=True)
 print("The sum of exponentiated values along axis=1 (sum along the columns) are : \n",sum_of_exp_values2, "\n")
 
 # Normalizing the values(which means dividng the exp value with the sum of all exp classes).
-
+norm_value = exp_values/sum_of_exp_values2
+print(norm_value)
 

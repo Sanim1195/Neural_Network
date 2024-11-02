@@ -18,7 +18,4 @@ print("Axis 0: ", axis0, "\n","The shape is: ", np.shape(axis0))
 
 axis1 = np.sum(matrix2D ,axis=1, keepdims=True)
 print("Axis 1: ",axis1, "The shape is: ", np.shape(axis1))
-
-
-
  
